@@ -1,0 +1,172 @@
+body {
+    background-color: #F0F0F1;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 280px;
+
+    left: 400px;
+    bottom: 380px;
+    float: left;
+    margin: 15px;
+
+
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+#img {
+    width: 100%;
+height: 200px;
+}
+.img {
+    width: 100%;
+height: 200px;
+}
+.card p {
+    word-break: break-all;
+}
+.button{
+
+    margin: 8px;
+    display: block;
+    width: 25%;
+    position: relative;
+    background-color: #FF5349;
+    color: white;
+    font-family: arial;
+    padding: 3px;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.general {
+    width: 80%;
+
+
+    float:right;
+bottom: 806px;
+    position: relative;
+
+}
+
+#form {
+    width: 19%;
+    height: 800px; 
+}
+
+@media(max-width:1440px){
+    .general {
+    width: 70%;
+
+    }
+
+}
+
+@media(max-width:549px){
+
+
+
+#form {
+
+    margin-left: -100%;
+}
+
+.general {
+    width: 90%;
+    float:left;
+
+
+}
+
+.card {
+
+
+    width: 100%;
+
+}
+
+}
+
+#formulario {
+    float: left;
+  width: 300px;
+  padding: 30px 30px;
+  background-color: #f0f0f1;
+  text-align: center;
+  border-radius: 5px 0 0 5px;
+}
+#formulario h3 {
+    color: #00A49B;
+}
+
+[type=text] {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  border: 0;
+  border-bottom: 1px solid rgba(0,0,0,.2);
+  height: 45px;
+  line-height: 45px;  
+  margin-bottom: 10px;
+  font-size: 1em;
+  color: rgba(0,0,0,.4);
+}
+[type='text']:focus {
+  outline: none;
+  border-color: #00A49B;
+}
+[type=submit] {
+  margin-top: 15px;
+  width: 30%;
+  border: 0;
+  background-color: #00A49B;
+  border-radius: 5px;
+  height: 30px;
+  color: white;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+.select {
+    background: white;
+   border: none;
+   border-radius: 5px 5px 5px 5px;
+   width: 80%;
+   height: 45px;
+   font-size: 1em;
+   padding: 5px;
+
+}
+
+.minmax {
+
+    width: 40%;
+    float: left;
+    margin: 5px;
+
+}
+
+.inputsv {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    padding-left: 27px;
+}
+
+#footer {
+  background-color: #292C44;
+  position: absolute;
+  display: inline-block;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  color: white;
+}

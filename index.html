@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SABOREATE</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="tu logo.png.jpg" alt="Logo de la página">
+      <h1>Saboreate</h1>
+  </div>
+   
+
+    <nav>
+      <ul>
+        <li><a href="#menu">MENU</a></li>
+        <li><a href="#productos"></a></li>
+        <li><a href="#contacto"></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="menu" class="section">
+    <div class="productos-container">
+      <div class="producto">
+        <img src="PASTELES.jpeg" alt="Producto 1">
+        <h3>PASTELES</h3>
+        <p>Precio: $10.000</p>
+        <button onclick="agregarAlCarrito('PASTELES', 10.000)">Agregar al pedido</button>
+   
+      </div>
+     
+      <div class="producto">
+        <img src="frit o congelado.jpeg" alt="Producto 1">
+        <h3>COMBO DE PASABOCAS FRITOS X200U</h3>
+        <p>Precio: $90.000</p>
+        <button onclick="agregarAlCarrito('COMBO DE PASABOCAS FRITOS X200U', 90.000)">Agregar al pedido</button>
+      </div>
+      <div class="producto">
+        <img src="frit o congelado.jpeg" alt="Producto 1">
+        <h3>COMBO DE PASABOCAS CONGELADOS X200U</h3>
+        <p>Precio: $70.000</p>
+        <button onclick="agregarAlCarrito('COMBO DE PASABOCAS CONGELADOS X200U', 70.000)">Agregar al pedido</button>
+      </div>
+      
+      
+      <!-- Repetir esta estructura para cada producto -->
+      <div class="producto">
+        <img src="R3.jpeg" alt="Producto 1">
+        <h3>DEDITOS X30</h3>
+        <p>Precio: $25.000</p>
+        <button onclick="agregarAlCarrito('DEDITOS X30', 25.000)">Agregar al pedido</button>
+      </div>
+      <div class="producto">
+        <img src="unidad.jpeg" alt="Producto 1">
+        <h3>DEDITOS X UNIDAD</h3>
+        <p>Precio: $1.000</p>
+        <button onclick="agregarAlCarrito('DEDITOS X UNIDAD', 1.000)">Agregar al pedido</button>
+      </div>
+      <div class="producto">
+        <img src="PICADA DE CERDO.jpg" alt="Producto 1">
+        <h3>PICADA DE CERDO PARA 2 PÉRSONAS</h3>
+        <p>Precio: $25.000</p>
+        <button onclick="agregarAlCarrito('PICADA DE CERDO PARA 2 PÉRSONAS', 25.000)">Agregar al pedido</button>
+      </div>
+      <div class="producto">
+        <img src="PICADA DE CERDO.jpg" alt="Producto 1">
+        <h3>PICADA DE CERDO PERSONAL</h3>
+        <p>Precio: $14.000</p>
+        <button onclick="agregarAlCarrito('PICADA DE CERDO PERSONAL', 14.000)">Agregar al pedido</button>
+      </div>
+      <div class="producto">
+        <img src="R4.jpg" alt="Producto 1">
+        <h3>EMPANADAS DE POLLO X15</h3>
+        <p>Precio: $20.000</p>
+        <button onclick="agregarAlCarrito('EMPANADAS DE POLLO X15', 20.000)">Agregar al pedido</button>
+      </div>
+      <div class="producto">
+        <img src="R1.jpeg" alt="Producto 1">
+        <h3>MIX BANDEJA </h3>
+        <p>Precio: $37.000</p>
+        <button onclick="agregarAlCarrito('MIX BANDEJA ', 37.000)">Agregar al pedido</button>
+      </div>
+      <div class="producto">
+        <img src="R2.jpeg" alt="Producto 1">
+        <h3>MIX BANDEJA SABOREATE</h3>
+        <p>Precio: $60.000  </p>
+        <button onclick="agregarAlCarrito('MIX BANDEJA SABOREATE', 60.000)">Agregar al pedido</button>
+      </div>
+      <div class="producto">
+        <img src="R.png" alt="Producto 1">
+        <h3>PUDINES  </h3>
+        <p>Precio: $45.000</p>
+        <button onclick="agregarAlCarrito('PUDINES', 45.000)">Agregar al pedido</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="carrito" class="section">
+    <h2  style="color:white;">Carrito de Compras</h2>
+    <ul style="LIST-STYLE: DECIMAL-LEADING-ZERO;color:white;" id="lista-carrito">
+
+      
+      <!-- Aquí se mostrarán los productos seleccionados -->
+    </ul>
+    <p style="color:white;">Total: <span id="total">$0</span></p>
+    <button onclick="realizarPedido()">Realizar Pedido por WhatsApp</button>
+    
+    <button onclick="vaciarCarrito()">Vaciar Carrito</button>
+  </section>
+
+
+  <footer  style="width:100%; margin-left: 0px;"  >
+
+
+    <div class="copyright" style="background-color: #0d47a1;">
+        <div class="container-fluid" style="background-color: #0d47a1; color: #bbdefb;">
+            ©  Copyright: Saboreate 
+      
+            ! UBICADOS EN BARRANQUILLA !
+    
+        </div>
+    </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
+
+
